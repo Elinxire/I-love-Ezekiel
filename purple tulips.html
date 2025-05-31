@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Little Garden</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #dff0ff;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .scene {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .house {
+      background: url('https://i.imgur.com/jLdP8pF.png') no-repeat center;
+      background-size: contain;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+
+    .garden {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 90%;
+    }
+
+    .tulip {
+      width: 70px;
+      height: 70px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/22/Purple_tulip_flower.jpg') no-repeat center;
+      background-size: cover;
+      border-radius: 8px;
+    }
+
+    .message {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 30px;
+      color: #6a0dad;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scene">
+    <div class="house"></div>
+
+    <div class="garden">
+      <!-- 16 tulips (you can copy more if you want!) -->
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+      <div class="tulip"></div>
+    </div>
+
+    <div class="message">
+      Welcome to our little home<br>
+      I love you 🌷💜
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" controls autoplay loop style="display: none;">
+    <source src="https://www.dropbox.com/scl/fi/m0d09f8z0sij6bqpuog9i/Im-Yours.mp3?rlkey=xv1qe0d67hrk93b3u2q4vufdc&dl=1" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+</body>
+</html>
