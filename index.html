@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Garden</title>
+  <style>
+    body {
+      text-align: center;
+      background: #f8f0ff;
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 50px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #a64ca6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #8e3d8e;
+    }
+    #garden {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .tulip {
+      display: inline-block;
+      margin: 10px;
+      width: 100px;
+    }
+    #message {
+      font-size: 36px;
+      color: #6a0dad;
+      margin-top: 20px;
+    }
+    #letter {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #fff0fb;
+      padding: 20px;
+      border-radius: 10px;
+      color: #4b004b;
+      font-size: 18px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showGarden()">Click Me</button>
+
+  <div id="garden">
+    <div id="flowers">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Purple_tulip_flower.jpg" class="tulip">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Purple_tulip_flower.jpg" class="tulip">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Purple_tulip_flower.jpg" class="tulip">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Purple_tulip_flower.jpg" class="tulip">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Purple_tulip_flower.jpg" class="tulip">
+    </div>
+    <div id="message">I love you 💜</div>
+
+    <div id="letter">
+      <h3>My Open Letter 💌</h3>
+      <p>
+        To the one who makes my heart smile,<br><br>
+        Every tulip in this garden blooms with love that I feel for you. 
+        Your presence in my life makes every moment more colorful, more peaceful, more beautiful. 💜
+        <br><br>
+        I might not be there with you, but with every beat of this melody and every flower you see, 
+        know that I’m thinking of you.
+        <br><br>
+        I love you — today, tomorrow, and always. 🌷
+      </p>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-love.mp3" loop></audio>
+
+  <script>
+    function showGarden() {
+      document.getElementById("garden").style.display = "block";
+      document.getElementById("bgMusic").play();
+    }
+  </script>
+
+</body>
+</html>
